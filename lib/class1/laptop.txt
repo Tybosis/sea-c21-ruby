@@ -3,7 +3,10 @@ Darwin Kernel Version 13.4.0: Sun Aug 17 19:50:11 PDT 2014; root:xnu-2422.115.4~
 ==> brew -v
 Homebrew 0.9.5
 ==> brew doctor
-Your system is ready to brew.
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
 ==> echo $SHELL
 /usr/local/bin/fish
 ==> echo $PATH
@@ -15,7 +18,7 @@ Sublime Text 2 Build 2221
 ==> cat Preferences.sublime-settings
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-	"font_size": 14.0,
+	"font_size": 18.0,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -67,7 +70,26 @@ filter.media.smudge=git-media-smudge %f
 push.default=simple
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 remote.origin.url=https://github.com/Tybosis/sea-c21-ruby.git
+remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
+remote.upstream.url=https://github.com/codefellows/sea-c21-ruby.git
 user.email=tyler.pottle@gmail.com
 user.name=Tyler Pottle
 ==> bundle -v
+Bundler version 1.7.3
 ==> bundle list
+Gems included by the bundle:
+  * ast (2.0.0)
+  * astrolabe (1.3.0)
+  * bundler (1.7.3)
+  * diff-lcs (1.2.5)
+  * parser (2.2.0.pre.4)
+  * powerpack (0.0.9)
+  * rainbow (2.0.0)
+  * rspec (3.1.0)
+  * rspec-core (3.1.4)
+  * rspec-expectations (3.1.1)
+  * rspec-mocks (3.1.1)
+  * rspec-support (3.1.0)
+  * rubocop (0.26.1)
+  * ruby-progressbar (1.6.0)
+  * slop (3.6.0)
