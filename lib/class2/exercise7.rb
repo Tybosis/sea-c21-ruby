@@ -32,16 +32,16 @@
 
 line_width = 25
 line_width2 = 50
-title = "Table of Contents"
-ch1 = "Chapter 1: Getting Started"
-ch2 = "Chapter 2: Numbers"
-ch3 = "Chapter 3: Letters"
+title = 'Table of Contents'
+ch1 = 'Chapter 1:  Getting Started'
+ch2 = 'Chapter 2:  Numbers'
+ch3 = 'Chapter 3:  Letters'
 
-p1 = "page  1 "
-p2 = "page  9"
-p3 = "page 13"
+p1 = 'page  1'
+p2 = 'page  9'
+p3 = 'page 13'
 
 puts title.center(line_width2)
-puts ch1.ljust(line_width) + p1.rjust(line_width)
+puts ch1.ljust(line_width) + p1.rjust(line_width - 2)
 puts ch2.ljust(line_width) + p2.rjust(line_width)
 puts ch3.ljust(line_width) + p3.rjust(line_width)

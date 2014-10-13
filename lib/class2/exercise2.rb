@@ -4,4 +4,4 @@
 #
 # TIP: I expect you to use a mathematical equation.
 
-puts 60*24*365*10
+puts 60 * 24 * 365 * 10
