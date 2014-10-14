@@ -12,4 +12,4 @@
 
 puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
 ans = gets.chomp
-puts "WHADDAYA MEAN '" + ans.to_s.upcase + "'?!? YOU'RE FIRED!!"
+puts "WHADDAYA MEAN '#{ans.upcase}'?!? YOU'RE FIRED!!"
