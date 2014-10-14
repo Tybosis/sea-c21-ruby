@@ -71,7 +71,7 @@ loop do
   elsif ans == ans.upcase && count == 1
     puts 'Nana: NOT SINCE 1949!'
     count += 1
-  elsif ans == ans.upcase && count > 1
+  elsif ans == ans.upcase && count == 1
     puts "Nana: NOT SINCE #{random.rand(21) + 1930}!"
   else
     puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
