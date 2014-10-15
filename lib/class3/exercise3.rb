@@ -33,9 +33,7 @@
 #   BYE
 #   Nana: BYE SWEETIE!
 
-random = Random.new
 puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
-count = 0
 bye_count = 0
 loop do
   ans = gets.chomp
@@ -45,17 +43,8 @@ loop do
   elsif ans == 'BYE' && bye_count != 2
     puts "Nana: HOW'S SCHOOL GOING?"
     bye_count += 1
-  elsif ans == ans.upcase && count == 0
-    puts 'Nana: NOT SINCE 1936!'
-    count += 1
-    bye_count = 0
-  # extra elsif to pass the specs
-  elsif ans == ans.upcase && count == 1
-    puts 'Nana: NOT SINCE 1949!'
-    count += 1
-    bye_count = 0
-  elsif ans == ans.upcase && count > 1
-    puts "Nana: NOT SINCE #{random.rand(21) + 1930}!"
+  elsif ans == ans.upcase
+    puts "Nana: NOT SINCE #{rand(21) + 1930}!"
     bye_count = 0
   else
     puts 'Nana: HUH?! SPEAK UP, SWEETIE!'
