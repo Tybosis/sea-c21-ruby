@@ -14,3 +14,6 @@ leap_years = []
 (1900..2000).each { |year| leap_years << year if year % 4 == 0 }
 
 leap_years.each { |year| puts year unless year % 100 == 0 && year % 400 != 0 }
+
+# (1900..2000).each { |year| puts year  if year % 4 == 0 && \
+# (year % 100 != 0 || year % 400 == 0) }

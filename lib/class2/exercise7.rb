@@ -30,18 +30,7 @@
 #
 #     'bird'.rjust(10)  #=> '      bird'
 
-line_width = 25
-line_width2 = 50
-title = 'Table of Contents'
-ch1 = 'Chapter 1:  Getting Started'
-ch2 = 'Chapter 2:  Numbers'
-ch3 = 'Chapter 3:  Letters'
-
-p1 = 'page  1'
-p2 = 'page  9'
-p3 = 'page 13'
-
-puts title.center(line_width2)
-puts ch1.ljust(line_width) + p1.rjust(line_width - 2)
-puts ch2.ljust(line_width) + p2.rjust(line_width)
-puts ch3.ljust(line_width) + p3.rjust(line_width)
+puts 'Table of Contents'.center(50)
+puts 'Chapter 1:  Getting Started'.ljust(27) + 'page  1'.rjust(23)
+puts 'Chapter 2:  Numbers'.ljust(25) + 'page  9'.rjust(25)
+puts 'Chapter 3:  Letters'.ljust(25) + 'page 13'.rjust(25)
