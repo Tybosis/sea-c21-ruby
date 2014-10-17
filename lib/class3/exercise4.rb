@@ -7,7 +7,6 @@
 # Years divisible by 100 are not leap years (e.g. 1900) unless they are also
 # divisible by 400 (e.g. 2000).
 #
-<<<<<<< HEAD
 # Tip: I expect you to use a loop and a few modulo operations.
 
 leap_years = []
@@ -18,6 +17,4 @@ leap_years.each { |year| puts year unless year % 100 == 0 && year % 400 != 0 }
 
 # (1900..2000).each { |year| puts year  if year % 4 == 0 && \
 # (year % 100 != 0 || year % 400 == 0) }
-=======
 # TIP: I expect you to use a loop and a few modulo operations.
->>>>>>> 35598e4c637577494df05b39bbf51321cff468e0
