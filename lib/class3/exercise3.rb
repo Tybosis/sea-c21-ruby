@@ -37,6 +37,7 @@ puts 'Nana: HI SWEETIE! GIVE NANA A KISS!'
 bye_count = 0
 loop do
   ans = gets.chomp
+
   if ans == 'BYE' && bye_count == 2
     puts 'Nana: BYE SWEETIE!'
     break

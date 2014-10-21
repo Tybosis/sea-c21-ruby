@@ -40,11 +40,9 @@ puts 'Type some words to be sorted alphabetically:'
 words = []
 loop do
   input = gets.chomp
-  words << input
   break if input.empty?
+  words << input
 end
 
-words.pop
-words.sort!
 puts 'Sweet! Here they are in alphabetical order:'
-puts words
+puts words.sort

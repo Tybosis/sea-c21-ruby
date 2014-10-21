@@ -39,10 +39,10 @@ def old_school_roman_numeral(num)
     1 => 'I'
   }
 
-  roman.each do | number, letter |
-    while num >= number
+  roman.each do |decimal, letter|
+    while num >= decimal
       string += letter
-      num -= number
+      num -= decimal
     end
   end
   string
