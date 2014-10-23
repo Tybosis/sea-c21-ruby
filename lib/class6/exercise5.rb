@@ -22,17 +22,16 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path('../database.yml', __FILE__)
 end
 
 def load
-  { replace: 'me' }
+  YAML.load_file(database)
 end
 
 def find(key)
-  key # fix me
+  load[:"#{key}"]
 end
-
 input = ARGV[0]
 
 abort 'Usage: exercise4.rb KEY' unless input
