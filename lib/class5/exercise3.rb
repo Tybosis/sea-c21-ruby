@@ -38,14 +38,11 @@ def records
 end
 
 def database
-  File.dirname(File.absolute_path(__FILE__)) + '/database.yml'
+  File.absolute_path('../database.yml', __FILE__)
 end
 
 def save
-  test_records = records.to_yaml
-  File.open database, 'w' do |f|
-    f.write test_records
-  end
+  File.write(database, records.to_yaml)
 end
 
 save

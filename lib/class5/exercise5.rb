@@ -26,16 +26,15 @@
 require 'yaml'
 
 def database
-  File.dirname(File.absolute_path(__FILE__)) + '/database.yml'
+  File.absolute_path('../database.yml', __FILE__)
 end
 
 def load
-  read_records = File.read database
-  YAML.load read_records
+  YAML.load_file(database)
 end
 
 def find(id)
-  return load[id - 1] if id >= 1
+  load[id - 1]
 end
 
 input = ARGV[0].to_i
