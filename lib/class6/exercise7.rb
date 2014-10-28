@@ -31,7 +31,10 @@ def load
 end
 
 def remove(key)
-  load.delete(:"#{key}")
+  hash = load
+  value = hash.delete(key.to_sym)
+  File.write(database, hash.to_yaml)
+  value
 end
 
 input = ARGV[0]
