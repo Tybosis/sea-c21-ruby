@@ -75,8 +75,8 @@ class Integer
     string = ''
     roman.each do |decimal, letter|
       while num >= decimal
-        string += letter
-        num -= decimal
+        string += letter * (num / decimal)
+        num -= decimal * (num / decimal)
       end
     end
     string
