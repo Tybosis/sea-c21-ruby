@@ -23,5 +23,14 @@
 #     orange_tree.fruit      #=> 44
 
 class OrangeTree
-  # replace me
+  attr_reader :fruit
+  def initialize
+    @fruit = 50
+  end
+
+  def pick!(amount = 1)
+    return nil if amount > @fruit
+    @fruit -= amount
+    @fruit
+  end
 end
