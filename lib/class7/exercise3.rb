@@ -30,7 +30,7 @@ class OrangeTree
   end
 
   def pick!(amount = 1)
-    return nil if amount > @fruit
+    return nil if amount > fruit
     @fruit -= amount
   end
 end

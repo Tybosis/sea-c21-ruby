@@ -78,6 +78,21 @@ class Integer
     string
   end
 end
+# Ryan's Solution
+# num = self
+# answer = []
+
+# arabics_to_romans.each do |arabic_to_roman|
+#   arabic, roman = arabic_to_roman
+
+#   quotient = num / arabic
+#   next if quotient == 0
+
+#   answer.push(roman * quotient)
+#   num %= arabic
+# end
+
+# answer.join
 
 class Array
   def second
